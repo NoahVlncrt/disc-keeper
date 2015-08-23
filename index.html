@@ -1,0 +1,53 @@
+<html>
+
+<head>
+  <link rel='stylesheet' href='style.css' />
+  <script src='script.js'></script>
+  <title>DiscKeeper</title>
+</head>
+
+<body onload="load()">
+
+  <h1>Disc Keeper (0.0.1)</h1>
+  <p>Disc Keeper is a very simple bare bones score calculator for DiscGolf!</p>
+  <div id="endGame">
+    <p>Round Complete!</p>
+    <div>
+      <p><b>Par:</b></p>
+      <p id="endPar"></p>
+      <p><b>Score:</b></p>
+      <p id="endShots"></p>
+    </div>
+  </div>
+
+  <div id="mainGame">
+    <div class="parBar">
+      <p><b>Hole:</b></p>
+      <p id="hole"></p>
+      <p><b>Par:</b></p>
+      <button id="par3" onclick="par3()">3</button>
+      <button id="par4" onclick="par4()">4</button>
+    </div>
+    <div class=mainBody>
+      <button id="subract" onclick="subtract()">-</button>
+      <p id="score"></p>
+      <button id="add" onclick="add()">+</button>
+    </div>
+    <div class="scores">
+      <p><b>Round Score:</b></p>
+      <p id="sign"></p>
+      <p id="roundScore"></p>
+      <p><b>Total Score:</b></p>
+      <p id="totalScore"></p>
+    </div>
+    <button id="next" onclick="next()">Next Hole</button>
+    <button id="debug" onclick="debug()">Reset</button>
+    <div>
+    <p>created by <a href="http://twitter.com/noahvlncrt"> Noah Vaillancourt </a> the pretty full feature version is <a href="http://codepen.io/NoahVlncrt/full/waXZVe/">here</a> not done yet though :( Soon :D</p>
+    </div>
+  </div>
+
+
+</body>
+
+</html>
